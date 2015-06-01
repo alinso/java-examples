@@ -10,7 +10,7 @@ the `javax.swing.JColorChooser` class.
 
 ### Requirements
 
-* Java 5
+* Java 5 or higher
 
 ### Screenshots
 

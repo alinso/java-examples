@@ -8,7 +8,7 @@ the checkboxes and the other enables/disables the "rollover" effect.
 
 ### Requirements
 
-* Java 1.4
+* Java 1.4 or higher
 
 ### Screenshots
 

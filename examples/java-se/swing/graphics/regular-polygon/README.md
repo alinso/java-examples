@@ -6,7 +6,7 @@ circumscribed circle.
 
 ### Requirements
 
-* Java 6
+* Java 6 or higher
 
 ### Screenshots
 

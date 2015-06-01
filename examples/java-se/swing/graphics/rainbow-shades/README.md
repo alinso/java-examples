@@ -6,7 +6,7 @@ method.
 
 ### Requirements
 
-* Java 1.4
+* Java 1.4 or higher
 
 ### Screenshots
 
