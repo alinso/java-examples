@@ -11,3 +11,7 @@ This document contains links to all the Java Examples, grouped by category.
 * **[Gradient Painter](java-se/swing/graphics/gradient-painter)**: Shows how to draw a linear gradient using the `java.awt.GradientPaint` class.
 * **[Rainbow Shades](java-se/swing/graphics/rainbow-shades)**: Shows how to fill a panel with "rainbow" shades using colors calculated with the `Color.getHSBColor` method.
 * **[Regular Polygon](java-se/swing/graphics/regular-polygon)**: Shows how to draw a "regular" polygon using the `Path2D.Double` class.
+
+#### Java SE &ndash; Swing &ndash; Slider components
+
+* **[RGB Color Slider](java-se/swing/slider/rgb-color-slider)**: Shows how to create a simple color "chooser" with three slider components.
