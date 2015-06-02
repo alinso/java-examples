@@ -15,3 +15,7 @@ This document contains links to all the Java Examples, grouped by category.
 #### Java SE &ndash; Swing &ndash; Slider components
 
 * **[RGB Color Slider](java-se/swing/slider/rgb-color-slider)**: Shows how to create a simple color "chooser" with three slider components.
+
+#### Java SE &ndash; Swing &ndash; Text components
+
+* **[Textfield Scrollbar](java-se/swing/text/textfield-scrollbar)**: Shows how to use a single `JScrollBar` to scroll the text in a `JTextField`.
