@@ -17,12 +17,10 @@ import javax.swing.JSlider;
 import javax.swing.JTextField;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import javax.swing.event.EventListenerList;
 
 public class RGBColorSliderPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 
-	private EventListenerList listenerList;
 	private ColorSlider redColorSlider;
 	private ColorSlider greenColorSlider;
 	private ColorSlider blueColorSlider;
@@ -31,7 +29,6 @@ public class RGBColorSliderPanel extends JPanel {
 		setLayout(new GridBagLayout());
 		setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-		listenerList = new EventListenerList();
 		redColorSlider = setupColorSlider("Red", 0);
 		greenColorSlider = setupColorSlider("Green", 0);
 		blueColorSlider = setupColorSlider("Blue", 0);
@@ -57,6 +54,13 @@ public class RGBColorSliderPanel extends JPanel {
 		blueColorSlider.setValue(color.getBlue());
 	}
 
+	// NOTE: javax.swing.JComponent (base of all Swing components) has a field:
+	//
+	//    protected EventListenerList listenerList = new EventListenerList();
+	//
+	// Swing components use that special list to manage many listeners, even of
+	// different types. This example also uses that list for ColorListener.
+
 	// This is a specific method to add (register) a ColorListener.
 	public void addColorListener(ColorListener colorListener) {
 		listenerList.add(ColorListener.class, colorListener);
@@ -68,21 +72,26 @@ public class RGBColorSliderPanel extends JPanel {
 	}
 
 	protected void fireColorChanged() {
+		Color currentColor = getColor();
+
 		// Gets a "snapshot" of all registered listeners.
 		Object[] listeners = listenerList.getListenerList();
+		ColorChangeEvent event = null;
 
 		// Listeners are notified from the last to the first registered.
 		// To understand why this cycle is so particular, please see the
-		// documentation of EventListenerList (eventually, see also the
-		// source code of some other classes like javax.swing.table.AbstractTableModel).
+		// documentation of EventListenerList (and eventually, see also the
+		// source code of some other classes like javax.swing.AbstractListModel).
 
-		for (int i = listeners.length-2; i >= 0; i -= 2) {
-			// The test on the Class is not really necessary in this example
-			// since the listener type is only one: ColorListener.
+		for (int i = listeners.length - 2; i >= 0; i -= 2) {
 			if (listeners[i] == ColorListener.class) {
-				// Creates the event object. The "source" of the event is *this* object.
-				ColorChangeEvent event = new ColorChangeEvent(this, getColor());
-				// For each registered listener, invokes the colorChanged method.
+				if (event == null) {
+					// Creates the event object. The "source" of the event
+					// is *this* object.
+					event = new ColorChangeEvent(this, currentColor);
+				}
+
+				// For each registered ColorListener, invokes the colorChanged method.
 				((ColorListener) listeners[i+1]).colorChanged(event);
 			}
 		}
