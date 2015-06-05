@@ -6,6 +6,10 @@ This document contains links to all the Java Examples, grouped by category.
 
 * **[Custom Checkbox Icons](java-se/swing/button/custom-checkbox-icons)**: Shows how to create a checkbox with custom icons for all the states.
 
+#### Java SE &ndash; Swing &ndash; Cursors
+
+* **[Predefined Cursors](java-se/swing/cursor/predefined-cursors)**: Shows a demonstration of the standard predefined cursors available from the `java.awt.Cursor` class.
+
 #### Java SE &ndash; Swing &ndash; Graphics
 
 * **[Gradient Painter](java-se/swing/graphics/gradient-painter)**: Shows how to draw a linear gradient using the `java.awt.GradientPaint` class.
