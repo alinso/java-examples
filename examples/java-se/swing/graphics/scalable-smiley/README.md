@@ -12,4 +12,5 @@ If you resize the frame, the smiley will scale proportionally in the correct way
 ### Screenshots
 
 ![Screenshot 1](screenshot-01.png "Screenshot 1")
+
 ![Screenshot 2](screenshot-02.png "Screenshot 2")
