@@ -16,6 +16,7 @@ This document contains links to all the Java Examples, grouped by category.
 * **[Image Rotation](java-se/swing/graphics/image-rotation)**: Shows how to draw an image that can be rotated from 0 to 360 degrees.
 * **[Rainbow Shades](java-se/swing/graphics/rainbow-shades)**: Shows how to fill a panel with "rainbow" shades using colors calculated with the `Color.getHSBColor` method.
 * **[Regular Polygon](java-se/swing/graphics/regular-polygon)**: Shows how to draw a "regular" polygon using the `Path2D.Double` class.
+* **[Scalable Smiley](java-se/swing/graphics/scalable-smiley)**: Shows how to draw a *scalable* "smiley" using the Java 2D API.
 
 #### Java SE &ndash; Swing &ndash; Slider components
 
