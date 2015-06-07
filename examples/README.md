@@ -21,6 +21,7 @@ This document contains links to all the Java Examples, grouped by category.
 #### Java SE &ndash; Swing &ndash; Slider components
 
 * **[RGB Color Slider](java-se/swing/slider/rgb-color-slider)**: Shows how to create a simple color "chooser" with three slider components.
+* **[Slider Label Icons](java-se/swing/slider/slider-label-icons)**: Shows how to setup a *label table* for a `JSlider` in order to have ticks with icons instead of numbers.
 
 #### Java SE &ndash; Swing &ndash; Text components
 
