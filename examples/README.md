@@ -10,6 +10,10 @@ This document contains links to all the Java Examples, grouped by category.
 
 * **[Predefined Cursors](java-se/swing/cursor/predefined-cursors)**: Shows a demonstration of the standard predefined cursors available from the `java.awt.Cursor` class.
 
+#### Java SE &ndash; Swing &ndash; Fonts
+
+* **[Digital Clock](java-se/swing/font/digital-clock)**: Shows how to load a custom TrueType font to create a simple "digital" clock.
+
 #### Java SE &ndash; Swing &ndash; Graphics
 
 * **[Gradient Painter](java-se/swing/graphics/gradient-painter)**: Shows how to draw a linear gradient using the `java.awt.GradientPaint` class.
