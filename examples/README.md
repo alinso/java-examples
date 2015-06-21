@@ -31,3 +31,7 @@ This document contains links to all the Java Examples, grouped by category.
 #### Java SE &ndash; Swing &ndash; Text components
 
 * **[Textfield Scrollbar](java-se/swing/text/textfield-scrollbar)**: Shows how to use a single `JScrollBar` to scroll the text in a `JTextField`.
+
+#### Java SE &ndash; XML &ndash; JAXP
+
+* **[Write book DOM to file](java-se/xml/jaxp/write-book-dom-to-file)**: Shows how to use the **JAXP** API to create a "book" document using the **DOM** interface.
