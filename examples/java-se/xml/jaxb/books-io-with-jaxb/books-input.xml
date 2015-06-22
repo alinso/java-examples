@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<books>
+    <book title="The Java Programming Language" edition="4th"
+          isbn10="0-321-34980-6" isbn13="978-0-321-34980-4"
+          pages="928">
+        <author firstName="Ken"   lastName="Arnold"/>
+        <author firstName="James" lastName="Gosling"/>
+        <author firstName="David" lastName="Holmes"/>
+    </book>
+</books>

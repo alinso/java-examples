@@ -32,6 +32,10 @@ This document contains links to all the Java Examples, grouped by category.
 
 * **[Textfield Scrollbar](java-se/swing/text/textfield-scrollbar)**: Shows how to use a single `JScrollBar` to scroll the text in a `JTextField`.
 
+#### Java SE &ndash; XML &ndash; JAXB
+
+* **[Books I/O With JAXB](java-se/xml/jaxb/books-io-with-jaxb)**: Shows how to use the **JAXB** API to *marshal* and *unmarshal* a "books" objects model (`Books`/`Book`/`Author` classes) to/from a file.
+
 #### Java SE &ndash; XML &ndash; JAXP
 
 * **[Write book DOM to file](java-se/xml/jaxp/write-book-dom-to-file)**: Shows how to use the **JAXP** API to create a "book" document using the **DOM** interface.
