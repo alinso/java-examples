@@ -22,6 +22,7 @@ This document contains links to all the Java Examples, grouped by category.
 * **[Rainbow Shades](java-se/swing/graphics/rainbow-shades)**: Shows how to fill a panel with "rainbow" shades using colors calculated with the `Color.getHSBColor` method.
 * **[Regular Polygon](java-se/swing/graphics/regular-polygon)**: Shows how to draw a "regular" polygon using the `Path2D.Double` class.
 * **[Scalable Smiley](java-se/swing/graphics/scalable-smiley)**: Shows how to draw a *scalable* "smiley" using the Java 2D API.
+* **[Shapes Hover Effect](java-se/swing/graphics/shapes-hover-effect)**: Shows how to use the *custom painting* and the `MouseListener`/`MouseMotionListener` listeners to create a simple "hover" effect on a set of shapes.
 
 #### Java SE &ndash; Swing &ndash; Slider components
 
