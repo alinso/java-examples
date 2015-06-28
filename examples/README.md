@@ -6,6 +6,10 @@ This document contains links to all the Java Examples, grouped by category.
 
 * **[Custom Checkbox Icons](java-se/swing/button/custom-checkbox-icons)**: Shows how to create a checkbox with custom icons for all the states.
 
+#### Java SE &ndash; Swing &ndash; Colors
+
+* **[Color Swatches](java-se/swing/color/color-swatches)**: Shows how to create a "color swatches" panel (a grid showing color samples that the user can select from).
+
 #### Java SE &ndash; Swing &ndash; Cursors
 
 * **[Predefined Cursors](java-se/swing/cursor/predefined-cursors)**: Shows a demonstration of the standard predefined cursors available from the `java.awt.Cursor` class.
