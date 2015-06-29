@@ -22,7 +22,7 @@ public class ColorSwatchesPanel extends JPanel {
 		setLayout(new GridLayout(0, columns));
 
 		// Creates a FlatButtonBorder with 2 pixels margin.
-		FlatButtonBorder border = new FlatButtonBorder(2);
+		FlatButtonBorder border = new FlatButtonBorder(1);
 
 		// Creates an ActionListener for all the buttons.
 		ActionListener actionListener = new ActionListener() {
@@ -36,7 +36,7 @@ public class ColorSwatchesPanel extends JPanel {
 
 		for (int i = 0; i < colors.length; i++) {
 			// Creates a JButton that only contains a ColorSwatchIcon.
-			ColorSwatchIcon icon = new ColorSwatchIcon(14, 14, colors[i]);
+			ColorSwatchIcon icon = new ColorSwatchIcon(12, 12, colors[i]);
 			JButton button = new JButton(icon);
 
 			button.setRolloverEnabled(true);

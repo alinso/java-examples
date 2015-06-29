@@ -26,7 +26,7 @@ public class ColorSwatchesFrame extends JFrame {
 	public ColorSwatchesFrame() {
 		super("Color Swatches - Java Example by andbin");
 
-		colorSwatchesPanel = new ColorSwatchesPanel(ColorUtils.getWebSafeColors(), 18);
+		colorSwatchesPanel = new ColorSwatchesPanel(ColorUtils.getWebSafeColors(), 36);
 
 		// Creates a JPanel (with default FlowLayout) to keep the ColorSwatchesPanel
 		// at its "preferred size".
@@ -36,7 +36,7 @@ public class ColorSwatchesFrame extends JFrame {
 		// Creates a JLabel to test the choosen color.
 		testLabel = new JLabel("The Java Programming Language");
 		testLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		testLabel.setFont(new Font("SansSerif", Font.BOLD, 40));
+		testLabel.setFont(new Font("SansSerif", Font.BOLD, 44));
 
 		Border outsideBorder = BorderFactory.createTitledBorder("COLOR TEST");
 		Border insideBorder = BorderFactory.createEmptyBorder(10, 10, 10, 10);
