@@ -33,6 +33,10 @@ This document contains links to all the Java Examples, grouped by category.
 * **[RGB Color Slider](java-se/swing/slider/rgb-color-slider)**: Shows how to create a simple color "chooser" with three slider components.
 * **[Slider Label Icons](java-se/swing/slider/slider-label-icons)**: Shows how to setup a *label table* for a `JSlider` in order to have ticks with icons instead of numbers.
 
+#### Java SE &ndash; Swing &ndash; Table components
+
+* **[Rows Background Pattern](java-se/swing/table/rows-background-pattern)**: Shows how to extend the `javax.swing.JTable` component in order to apply a (repeating) pattern of background colors for the rows.
+
 #### Java SE &ndash; Swing &ndash; Text components
 
 * **[Textfield Scrollbar](java-se/swing/text/textfield-scrollbar)**: Shows how to use a single `JScrollBar` to scroll the text in a `JTextField`.
