@@ -14,21 +14,26 @@
 		<property name="javaexample.src.dir" value="src" />
 		<property name="javaexample.bin.dir" value="bin" />
 		<property name="javaexample.jar.file" value="${javaexample.name}.jar" />
+		<property name="javaexample.java.encoding" value="UTF-8" />
 		<property name="javaexample.build.debug" value="false" />  <!-- default, if not configured in build.properties -->
 	</target>
 
-	<target name="clean" depends="init" description="Cleans up build directory">
+	<target name="clean" depends="init" description="Cleans up the bin directory">
+		<!-- Removes the bin directory with all its content -->
 		<delete dir="${javaexample.bin.dir}" />
 	</target>
 
-	<target name="prepare" depends="init">
+	<target name="prepare" depends="init" description="Creates the bin directory">
+		<!-- Creates the directory, only if necessary -->
 		<mkdir dir="${javaexample.bin.dir}" />
 	</target>
 
 	<target name="compile" depends="prepare" description="Compiles the source code">
+		<!-- Compiles java sources from src directory to the bin directory -->
 		<javac srcdir="${javaexample.src.dir}" destdir="${javaexample.bin.dir}"
-				debug="${javaexample.build.debug}" />
+		       debug="${javaexample.build.debug}" encoding="${javaexample.java.encoding}"/>
 
+		<!-- Copies all non .java files from src directory to the bin directory -->
 		<copy todir="${javaexample.bin.dir}">
 			<fileset dir="${javaexample.src.dir}" excludes="**/*.java" />
 		</copy>
