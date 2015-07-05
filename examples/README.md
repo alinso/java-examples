@@ -18,6 +18,10 @@ This document contains links to all the Java Examples, grouped by category.
 
 * **[Digital Clock](java-se/swing/font/digital-clock)**: Shows how to load a custom TrueType font to create a simple "digital" clock.
 
+#### Java SE &ndash; Swing &ndash; Frames
+
+* **[Multi Icons Window](java-se/swing/frame/multi-icons-window)**: Shows how to apply a list of images to a `javax.swing.JFrame` for the window icon.
+
 #### Java SE &ndash; Swing &ndash; Graphics
 
 * **[Gradient Painter](java-se/swing/graphics/gradient-painter)**: Shows how to draw a linear gradient using the `java.awt.GradientPaint` class.
