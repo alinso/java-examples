@@ -32,6 +32,10 @@ This document contains links to all the Java Examples, grouped by category.
 * **[Scalable Smiley](java-se/swing/graphics/scalable-smiley)**: Shows how to draw a *scalable* "smiley" using the Java 2D API.
 * **[Shapes Hover Effect](java-se/swing/graphics/shapes-hover-effect)**: Shows how to use the *custom painting* and the `MouseListener`/`MouseMotionListener` listeners to create a simple "hover" effect on a set of shapes.
 
+#### Java SE &ndash; Swing &ndash; List components
+
+* **[Searchable Persons List](java-se/swing/list/searchable-persons-list)**: Shows how to create a list (`javax.swing.JList`) in which the items can be searched using a specific search rule.
+
 #### Java SE &ndash; Swing &ndash; Slider components
 
 * **[RGB Color Slider](java-se/swing/slider/rgb-color-slider)**: Shows how to create a simple color "chooser" with three slider components.
