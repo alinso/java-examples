@@ -24,37 +24,38 @@ public class MultiIconsWindowFrame extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	private static final String[] appIconResourceNames = {
-		"icons/java-icon-16.png",
-		"icons/java-icon-32.png",
-		"icons/java-icon-48.png",
-		"icons/java-icon-64.png",
-		"icons/java-icon-96.png",
-		"icons/java-icon-128.png"
+		"icons/app-icon-16x16.png",
+		"icons/app-icon-24x24.png",
+		"icons/app-icon-32x32.png",
+		"icons/app-icon-48x48.png",
+		"icons/app-icon-64x64.png",
+		"icons/app-icon-96x96.png",
+		"icons/app-icon-128x128.png"
 	};
 
 	public MultiIconsWindowFrame() {
 		super("Multi Icons Window - Java Example by andbin");
 
-		List<Image> iconsList = new ArrayList<Image>();
+		List<Image> iconImagesList = new ArrayList<Image>();
 
 		for (String appIconResourceName : appIconResourceNames) {
-			iconsList.add(loadImage(appIconResourceName));
+			iconImagesList.add(loadImage(appIconResourceName));
 		}
 
-		// Sets the icons list to the frame.
-		setIconImages(iconsList);
+		// Sets the icon images list to the frame.
+		setIconImages(iconImagesList);
 
 		// Shows the icons also in the frame, just for demonstration.
 		JPanel demoPanel = new JPanel();
 		demoPanel.setLayout(new BoxLayout(demoPanel, BoxLayout.PAGE_AXIS));
-		demoPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+		demoPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 80));
 
 		for (String appIconResourceName : appIconResourceNames) {
 			Image iconImage = loadImage(appIconResourceName);
 			JLabel demoLabel = new JLabel(appIconResourceName);
 			demoLabel.setIcon(new ImageIcon(iconImage));
 			demoLabel.setIconTextGap(20);
-			demoLabel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 100));
+			demoLabel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 			demoPanel.add(demoLabel);
 		}
 
