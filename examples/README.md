@@ -24,6 +24,7 @@ This document contains links to all the Java Examples, grouped by category.
 
 #### Java SE &ndash; Swing &ndash; Graphics
 
+* **[Custom Backgrounds](java-se/swing/graphics/custom-backgrounds)**: Shows how to use the *custom painting* in a component that extends `javax.swing.JPanel` to create some nice background effects.
 * **[Gradient Painter](java-se/swing/graphics/gradient-painter)**: Shows how to draw a linear gradient using the `java.awt.GradientPaint` class.
 * **[Image Rotation](java-se/swing/graphics/image-rotation)**: Shows how to draw an image that can be rotated from 0 to 360 degrees.
 * **[Images Alpha Blending](java-se/swing/graphics/images-alpha-blending)**: Shows how to use the `java.awt.AlphaComposite` class to blend two different images.
