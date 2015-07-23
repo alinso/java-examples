@@ -20,7 +20,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
-public class MultiIconsWindowFrame extends JFrame {
+public class WindowIconImagesFrame extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	private static final String[] appIconResourceNames = {
@@ -33,8 +33,8 @@ public class MultiIconsWindowFrame extends JFrame {
 		"icons/app-icon-128x128.png"
 	};
 
-	public MultiIconsWindowFrame() {
-		super("Multi Icons Window - Java Example by andbin");
+	public WindowIconImagesFrame() {
+		super("Window Icon Images - Java Example by andbin");
 
 		List<Image> iconImagesList = new ArrayList<Image>();
 

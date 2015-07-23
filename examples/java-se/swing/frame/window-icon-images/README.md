@@ -1,4 +1,4 @@
-# Multi Icons Window
+# Window Icon Images
 
 This example shows how to apply a list of images to a `javax.swing.JFrame` for
 the window icon so that the platform/Operating System can choose the most

@@ -24,7 +24,7 @@ This document contains links to all the Java Examples, grouped by category.
 
 #### Java SE &ndash; Swing &ndash; Frames
 
-* **[Multi Icons Window](java-se/swing/frame/multi-icons-window)**: Shows how to apply a list of images to a `javax.swing.JFrame` for the window icon.
+* **[Window Icon Images](java-se/swing/frame/window-icon-images)**: Shows how to apply a list of images to a `javax.swing.JFrame` for the window icon.
 
 #### Java SE &ndash; Swing &ndash; Graphics
 
