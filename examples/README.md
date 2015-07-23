@@ -2,6 +2,10 @@
 
 This document contains links to all the Java Examples, grouped by category.
 
+#### Java SE &ndash; Images
+
+* **[RGB Image Filters](java-se/image/rgb-image-filters)**: Shows how to filter images using one predefined and four custom *RGB image filters* (extensions of `java.awt.image.RGBImageFilter` class).
+
 #### Java SE &ndash; Swing &ndash; Button components
 
 * **[Custom Checkbox Icons](java-se/swing/button/custom-checkbox-icons)**: Shows how to create a checkbox with custom icons for all the states.
