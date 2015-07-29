@@ -16,8 +16,8 @@ different images. The alpha level of both images is controllable by a single
 
 ### Credits
 
-The "Orange" and "Lime" images are derived from original photos produced by
-Paul Bodea ('paulgeor').<br>Please see:
+The *orange* and the *lime* images are derived from original photos produced by
+**Paul Bodea** ("paulgeor").<br>Please see:
 
-* http://www.freeimages.com/photo/251024
-* http://www.freeimages.com/photo/251025
+* http://www.freeimages.com/photo/orange-1524171
+* http://www.freeimages.com/photo/lime-1524178

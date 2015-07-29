@@ -15,7 +15,7 @@ are filtered/resampled during an image rendering).
 
 ### Credits
 
-The &ldquo;video card&rdquo; image is derived from original photo produced
-by Marin Myftiu ('marinm').<br>Please see:
+The *video card* image is derived from the original photo produced
+by **Marin Myftiu** ("marinm").<br>Please see:
 
-* http://www.freeimages.com/photo/1046658
+* http://www.freeimages.com/photo/video-card-1242074

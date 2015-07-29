@@ -25,8 +25,7 @@ point of this Java Example).
 
 ### Credits
 
-The &ldquo;colored pencils&rdquo; image is derived from the original photo
-&ldquo;Lapis de Cor&rdquo; produced by **Heitor Jose** (&ldquo;tchor1974&rdquo;).
-<br>Please see:
+The *colored pencils* image is derived from the original photo "Lapis de Cor"
+produced by **Heitor Jose** ("tchor1974").<br>Please see:
 
 * http://www.freeimages.com/photo/lapis-de-cor-1155223
