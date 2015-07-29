@@ -22,13 +22,10 @@ public class AlphaColorPanel extends JPanel {
 		setLayout(new BorderLayout());
 	}
 
+	@Override
 	protected void paintComponent(Graphics g) {
-		// Sets the color that can even be semi-transparent.
+		// Fills the panel with the color that can even be semi-transparent.
 		g.setColor(getBackground());
 		g.fillRect(0, 0, getWidth(), getHeight());
-
-		// Calls the original paintComponent. Since this panel is non-opaque,
-		// this should not paint again the background.
-		super.paintComponent(g);
 	}
 }
