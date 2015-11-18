@@ -57,6 +57,7 @@ This document contains links to all the Java Examples, grouped by category.
 
 #### Java SE &ndash; Swing &ndash; Text components
 
+* **[Textarea Enter Key Bindings](java-se/swing/text/textarea-enter-key-bindings)**: Shows how to setup the `Keymap` of a `JTextArea` to change the behaviour of the ENTER key.
 * **[Textfield Scrollbar](java-se/swing/text/textfield-scrollbar)**: Shows how to use a single `JScrollBar` to scroll the text in a `JTextField`.
 
 #### Java SE &ndash; XML &ndash; JAXB
