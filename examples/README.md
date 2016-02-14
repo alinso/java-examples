@@ -23,6 +23,10 @@ This document contains links to all the Java Examples, grouped by category.
 
 * **[Predefined Cursors](java-se/swing/cursor/predefined-cursors)**: Shows a demonstration of the standard predefined cursors available from the `java.awt.Cursor` class.
 
+#### Java SE &ndash; Swing &ndash; Events
+
+* **[Virtual Keypad](java-se/swing/event/virtual-keypad)**: Shows how to create a "virtual" keypad that injects keystrokes into the system using the well known `java.awt.Robot` class.
+
 #### Java SE &ndash; Swing &ndash; Fonts
 
 * **[Digital Clock](java-se/swing/font/digital-clock)**: Shows how to load a custom TrueType font to create a simple "digital" clock.
