@@ -16,3 +16,7 @@ apply a (repeating) pattern of background colors for the rows.
 
 ![Screenshot 2](screenshot-02.png "Screenshot 2")
 <br>(sample with the new "[Nimbus](https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/nimbus.html)" Look and Feel)
+
+### Downloads
+
+* Sources zip archive: [rows-background-pattern-src.zip](dist/rows-background-pattern-src.zip?raw=true)
