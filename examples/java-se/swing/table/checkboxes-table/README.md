@@ -12,3 +12,7 @@ of the `javax.swing.table.AbstractTableModel` class.
 ### Screenshots
 
 ![Screenshot 1](screenshot-01.png "Screenshot 1")
+
+### Downloads
+
+* Sources zip archive: [checkboxes-table-src.zip](dist/checkboxes-table-src.zip?raw=true)
