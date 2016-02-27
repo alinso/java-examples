@@ -61,6 +61,7 @@ This document contains links to all the Java Examples, grouped by category.
 
 #### Java SE &ndash; Swing &ndash; Table components
 
+* **[Checkboxes Table](java-se/swing/table/checkboxes-table)**: Shows how to create a nice and useful table of items selectable using checkboxes.
 * **[Rows Background Pattern](java-se/swing/table/rows-background-pattern)**: Shows how to extend the `javax.swing.JTable` component in order to apply a (repeating) pattern of background colors for the rows.
 
 #### Java SE &ndash; Swing &ndash; Text components
