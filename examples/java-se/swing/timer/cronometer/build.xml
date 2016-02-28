@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (C) 2016 Andrea Binello ("andbin")
+
+  This file is part of the "Java Examples" project and is licensed under the
+  MIT License. See one of the license files included in the root of the project
+  for the full text of the license.
+-->
+<project name="java-example-by-andbin" default="run">
+	<description>Generic Apache Ant build file for Java Examples project</description>
+
+	<target name="init">
+		<property file="build.properties" />
+		<property name="javaexample.src.dir" value="src" />
+		<property name="javaexample.bin.dir" value="bin" />
+		<property name="javaexample.dist.dir" value="dist" />
+		<property name="javaexample.jar.file" value="${javaexample.name}.jar" />
+		<property name="javaexample.java.encoding" value="UTF-8" />
+		<property name="javaexample.build.debug" value="false" />  <!-- default, if not configured in build.properties -->
+	</target>
+
+	<target name="clean" depends="init" description="Cleans up the bin directory">
+		<!-- Removes the bin directory with all its content -->
+		<delete dir="${javaexample.bin.dir}" />
+	</target>
+
+	<target name="prepare" depends="init" description="Creates the bin directory">
+		<!-- Creates the bin directory, only if necessary -->
+		<mkdir dir="${javaexample.bin.dir}" />
+	</target>
+
+	<target name="compile" depends="prepare" description="Compiles the source code">
+		<!-- Compiles java sources from src directory to the bin directory -->
+		<javac srcdir="${javaexample.src.dir}" destdir="${javaexample.bin.dir}"
+		       debug="${javaexample.build.debug}" encoding="${javaexample.java.encoding}"/>
+
+		<!-- Copies all non .java files from src directory to the bin directory -->
+		<copy todir="${javaexample.bin.dir}">
+			<fileset dir="${javaexample.src.dir}" excludes="**/*.java" />
+		</copy>
+	</target>
+
+	<target name="run" depends="compile" description="Runs the application">
+		<java classname="${javaexample.main.class}" fork="true">
+			<classpath>
+				<pathelement location="${javaexample.bin.dir}" />
+			</classpath>
+		</java>
+	</target>
+
+	<target name="package" depends="compile" description="Creates the jar file">
+		<jar destfile="${javaexample.jar.file}">
+			<fileset dir="${javaexample.bin.dir}" />
+			<manifest>
+				<attribute name="Main-Class" value="${javaexample.main.class}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="zip-src" depends="init" description="Creates the sources zip archive">
+		<mkdir dir="${javaexample.dist.dir}" />
+
+		<zip destfile="${javaexample.dist.dir}/${javaexample.name}-src.zip">
+			<zipfileset dir="src" prefix="${javaexample.name}/src" />
+			<zipfileset dir="." prefix="${javaexample.name}">
+				<include name="build.properties"/>
+				<include name="build.xml"/>
+				<include name="MIT-LICENSE.txt"/>
+			</zipfileset>
+		</zip>
+	</target>
+</project>

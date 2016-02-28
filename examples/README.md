@@ -69,6 +69,10 @@ This document contains links to all the Java Examples, grouped by category.
 * **[Textarea Enter Key Bindings](java-se/swing/text/textarea-enter-key-bindings)**: Shows how to setup the `Keymap` of a `JTextArea` to change the behaviour of the ENTER key.
 * **[Textfield Scrollbar](java-se/swing/text/textfield-scrollbar)**: Shows how to use a single `JScrollBar` to scroll the text in a `JTextField`.
 
+#### Java SE &ndash; Swing &ndash; Timer
+
+* **[Cronometer](java-se/swing/timer/cronometer)**: Shows how to create a simple cronometer with start/stop buttons.
+
 #### Java SE &ndash; XML &ndash; JAXB
 
 * **[Books I/O With JAXB](java-se/xml/jaxb/books-io-with-jaxb)**: Shows how to use the **JAXB** API to *marshal* and *unmarshal* a "books" objects model (`Books`/`Book`/`Author` classes) to/from a file.
