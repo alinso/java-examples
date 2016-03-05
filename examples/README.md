@@ -2,6 +2,10 @@
 
 This document contains links to all the Java Examples, grouped by category.
 
+#### Java SE &ndash; Apache PDFBox
+
+* **[Radial Text PDF](java-se/apache-pdfbox/radial-text-pdf)**: Shows how to draw a circle of radial texts with a rainbow colors effect.
+
 #### Java SE &ndash; Images
 
 * **[Primary Monitor Screenshot](java-se/image/primary-monitor-screenshot)**: Shows how to capture the content of the primary monitor and then save the captured image to a file in the well known PNG format.
