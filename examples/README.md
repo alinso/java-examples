@@ -9,7 +9,7 @@ This document contains links to all the Java Examples, grouped by category.
 #### Java SE &ndash; Images
 
 * **[Primary Monitor Screenshot](java-se/image/primary-monitor-screenshot)**: Shows how to capture the content of the primary monitor and then save the captured image to a file in the well known PNG format.
-* **[RGB Image Filters](java-se/image/rgb-image-filters)**: Shows how to filter images using one predefined and four custom *RGB image filters* (extensions of `java.awt.image.RGBImageFilter` class).
+* **[RGB Image Filters](java-se/image/rgb-image-filters)**: Shows how to filter images using "RGB image filters", which are extensions of the `java.awt.image.RGBImageFilter` class.
 
 #### Java SE &ndash; Networking
 
