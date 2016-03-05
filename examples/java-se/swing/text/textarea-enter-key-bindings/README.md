@@ -11,3 +11,7 @@ description.
 ### Screenshots
 
 ![Screenshot 1](screenshot-01.png "Screenshot 1")
+
+### Downloads
+
+* Sources zip archive: [textarea-enter-key-bindings-src.zip](dist/textarea-enter-key-bindings-src.zip?raw=true)
