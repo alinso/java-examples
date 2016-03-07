@@ -5,6 +5,7 @@ This document contains links to all the Java Examples, grouped by category.
 #### Java SE &ndash; Apache PDFBox
 
 * **[Radial Text PDF](java-se/apache-pdfbox/radial-text-pdf)**: Shows how to draw a circle of radial texts with a rainbow colors effect.
+* **[Standard Fonts Demo PDF](java-se/apache-pdfbox/standard-fonts-demo-pdf)**: Shows how to draw a demonstration page for each of the 14 standard fonts in a PDF.
 
 #### Java SE &ndash; Images
 
