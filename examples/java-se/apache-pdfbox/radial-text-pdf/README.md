@@ -12,9 +12,9 @@ A3, A4 and A5 paper sizes.
 
 The application generates the following PDF files:
 
-* [radial-text-a3.pdf](radial-text-a3.pdf?raw=true)
-* [radial-text-a4.pdf](radial-text-a4.pdf?raw=true)
-* [radial-text-a5.pdf](radial-text-a5.pdf?raw=true)
+* radial-text-a3.pdf &mdash; [view](radial-text-a3.pdf) | [download](radial-text-a3.pdf?raw=true)
+* radial-text-a4.pdf &mdash; [view](radial-text-a4.pdf) | [download](radial-text-a4.pdf?raw=true)
+* radial-text-a5.pdf &mdash; [view](radial-text-a5.pdf) | [download](radial-text-a5.pdf?raw=true)
 
 ### Notes
 
