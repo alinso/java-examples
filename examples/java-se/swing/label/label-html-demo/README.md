@@ -1,6 +1,6 @@
 # Label Html Demo
 
-This example shows how to use HTML markup in a `JLabel` component.
+This example shows how to use HTML markup in a `javax.swing.JLabel` component.
 
 ### Requirements
 
@@ -17,3 +17,7 @@ in the *Tango Icon Library* set, licensed under Attribution-Non-Commercial 3.0
 Netherlands.<br>Please see:
 
 * https://www.iconfinder.com/iconsets/tango-icon-library
+
+### Downloads
+
+* Sources zip archive: [label-html-demo-src.zip](dist/label-html-demo-src.zip?raw=true)

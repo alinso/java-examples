@@ -53,7 +53,7 @@ This document contains links to all the Java Examples, grouped by category.
 
 #### Java SE &ndash; Swing &ndash; Labels
 
-* **[Label Html Demo](java-se/swing/label/label-html-demo)**: Shows how to use HTML markup in a `JLabel` component.
+* **[Label Html Demo](java-se/swing/label/label-html-demo)**: Shows how to use HTML markup in a `javax.swing.JLabel` component.
 
 #### Java SE &ndash; Swing &ndash; List components
 

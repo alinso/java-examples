@@ -13,6 +13,7 @@
 		<property file="build.properties" />
 		<property name="javaexample.src.dir" value="src" />
 		<property name="javaexample.bin.dir" value="bin" />
+		<property name="javaexample.dist.dir" value="dist" />
 		<property name="javaexample.jar.file" value="${javaexample.name}.jar" />
 		<property name="javaexample.java.encoding" value="UTF-8" />
 		<property name="javaexample.build.debug" value="false" />  <!-- default, if not configured in build.properties -->
@@ -24,7 +25,7 @@
 	</target>
 
 	<target name="prepare" depends="init" description="Creates the bin directory">
-		<!-- Creates the directory, only if necessary -->
+		<!-- Creates the bin directory, only if necessary -->
 		<mkdir dir="${javaexample.bin.dir}" />
 	</target>
 
@@ -54,5 +55,18 @@
 				<attribute name="Main-Class" value="${javaexample.main.class}" />
 			</manifest>
 		</jar>
+	</target>
+
+	<target name="zip-src" depends="init" description="Creates the sources zip archive">
+		<mkdir dir="${javaexample.dist.dir}" />
+
+		<zip destfile="${javaexample.dist.dir}/${javaexample.name}-src.zip">
+			<zipfileset dir="src" prefix="${javaexample.name}/src" />
+			<zipfileset dir="." prefix="${javaexample.name}">
+				<include name="build.properties"/>
+				<include name="build.xml"/>
+				<include name="MIT-LICENSE.txt"/>
+			</zipfileset>
+		</zip>
 	</target>
 </project>
