@@ -17,7 +17,7 @@
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<description>A Java Example that shows how to draw radial text in a PDF using the Apache PDFBox</description>
+	<description>A Java Example that shows how to draw a circle of radial texts in a PDF using the Apache PDFBox</description>
 
 	<developers>
 		<developer>
@@ -29,6 +29,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.main.class>javaexample.RadialTextPdfMain</project.main.class>
+		<project.library.directory>lib</project.library.directory>
 	</properties>
 
 	<dependencies>
@@ -55,8 +57,8 @@
 						<index>true</index>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>javaexample.RadialTextPdfMain</mainClass>
+							<classpathPrefix>${project.library.directory}/</classpathPrefix>
+							<mainClass>${project.main.class}</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -64,8 +66,8 @@
 
 			<!--
 				The 'maven-dependency-plugin' setups the copy of all the
-				dependencies into a "lib" directory during the package phase.
-				Note that this "lib" directory matches the one configured in
+				dependencies into a "library" directory during the package phase.
+				Note that this "library" directory matches the one configured in
 				the <classpathPrefix> tag of the maven-jar-plugin.
 			-->
 			<plugin>
@@ -80,7 +82,7 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${project.build.directory}/lib/</outputDirectory>
+							<outputDirectory>${project.build.directory}/${project.library.directory}/</outputDirectory>
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
@@ -98,7 +100,7 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.4.0</version>
 				<configuration>
-					<mainClass>javaexample.RadialTextPdfMain</mainClass>
+					<mainClass>${project.main.class}</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
