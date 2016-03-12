@@ -1,3 +1,8 @@
+[![Java programming language](https://img.shields.io/badge/language-Java-bf7b3b.svg)](http://www.oracle.com/technetwork/java/index.html "Java programming language")
+[![Built with Apache Ant](https://img.shields.io/badge/built_with-Apache_Ant-f69625.svg)](http://ant.apache.org "Built with Apache Ant")
+[![Built with Apache Maven](https://img.shields.io/badge/built_with-Apache_Maven-f69625.svg)](http://maven.apache.org "Built with Apache Maven")
+[![MIT License](https://img.shields.io/badge/license-MIT-1e90ff.svg)](MIT-LICENSE.md "MIT License")
+
 # Java Examples by andbin
 
 The **Java Examples** project is exclusively developed by [Andrea Binello](http://www.andbin.net)
@@ -5,7 +10,7 @@ The **Java Examples** project is exclusively developed by [Andrea Binello](http:
 about the *Java programming language*, the *Java SE* (Standard Edition) framework
 and other libraries.
 
-#### :point_right: **[Table of contents](examples/README.md)**
+### :point_right: **[Table of contents](examples/README.md)**
 
 ## Features
 
@@ -27,7 +32,8 @@ free software license. See the full text of the license:
 * [MIT License](MIT-LICENSE.md)
 * [MIT License (plain text)](MIT-LICENSE.txt)
 
-See also [The MIT License (MIT) | Open Source Initiative](http://opensource.org/licenses/MIT).
+You can also see [here](http://opensource.org/licenses/MIT "The MIT License (MIT) | Open Source Initiative")
+or [here](http://choosealicense.com/licenses/mit/ "MIT License - Choose a License").
 
 ## Feedback
 
