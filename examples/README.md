@@ -78,6 +78,10 @@ This document contains links to all the Java Examples, grouped by category.
 
 * **[Cronometer](java-se/swing/timer/cronometer)**: Shows how to create a simple cronometer with start/stop buttons.
 
+#### Java SE &ndash; vlcj
+
+* **[Minimal Player With Play](java-se/vlcj/minimal-player-with-play)**: Shows how to create a minimal [vlcj](https://github.com/caprica/vlcj) player with only a play button.
+
 #### Java SE &ndash; XML &ndash; JAXB
 
 * **[Books I/O With JAXB](java-se/xml/jaxb/books-io-with-jaxb)**: Shows how to use the **JAXB** API to *marshal* and *unmarshal* a "books" objects model (`Books`/`Book`/`Author` classes) to/from a file.
