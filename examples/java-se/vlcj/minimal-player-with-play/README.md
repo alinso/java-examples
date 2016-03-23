@@ -1,7 +1,10 @@
 # Minimal Player With Play
 
-This example shows how to create a minimal [vlcj](https://github.com/caprica/vlcj)
-player with only a play button.
+This example shows how to create a minimal video player with only a play button
+using the [vlcj](https://github.com/caprica/vlcj) framework.
+
+The code makes direct use of the `Canvas` AWT component and also `MediaPlayerFactory`
+and `EmbeddedMediaPlayer` classes from vlcj.
 
 ### Requirements
 
@@ -18,7 +21,7 @@ player with only a play button.
 This example is based on vlcj **3.10.1** (referenced as Maven *dependency*).
 
 If you want to play the video as referenced in this example, you need an internet
-connection of at least 300 KByte/sec.
+connection of at least 1~1.5 Mbit/sec.
 
 ### Credits
 

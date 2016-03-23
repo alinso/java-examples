@@ -44,6 +44,7 @@ public class MinimalPlayerWithPlayFrame extends JFrame {
 	public MinimalPlayerWithPlayFrame() {
 		super("Minimal Player With Play - Java Example by andbin");
 
+		// Setups components and listeners.
 		actionListenerImpl = new ActionListenerImpl();
 
 		mainPanel = new JPanel(new BorderLayout(10, 10));
@@ -59,6 +60,7 @@ public class MinimalPlayerWithPlayFrame extends JFrame {
 		playButton = new JButton("PLAY");
 		playButton.addActionListener(actionListenerImpl);
 
+		// Setups vlcj objects.
 		String[] vlcArgs = {
 			"--quiet",            // Avoids warning and information messages.
 			"--quiet-synchro",    // Avoids debug infos about video output synchronization.
