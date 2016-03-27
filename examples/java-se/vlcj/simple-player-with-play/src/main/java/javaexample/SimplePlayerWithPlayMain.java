@@ -19,11 +19,11 @@ import javax.swing.SwingUtilities;
  * It is generally always a good practice to start all the GUI creation on the
  * EDT and *not* on the "main" thread.
  */
-public class MinimalPlayerWithPlayMain {
+public class SimplePlayerWithPlayMain {
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-				new MinimalPlayerWithPlayFrame().setVisible(true);
+				new SimplePlayerWithPlayFrame().setVisible(true);
 			}
 		});
 	}

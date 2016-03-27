@@ -13,11 +13,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>net.andbin.javaexamples.vlcj</groupId>
-	<artifactId>minimal-player-with-play</artifactId>
+	<artifactId>simple-player-with-play</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<description>A minimal vlcj player with only a play button</description>
+	<description>A simple video player with only a play button using the vlcj framework</description>
 
 	<developers>
 		<developer>
@@ -29,7 +29,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.main.class>javaexample.MinimalPlayerWithPlayMain</project.main.class>
+		<project.main.class>javaexample.SimplePlayerWithPlayMain</project.main.class>
 		<project.library.directory>lib</project.library.directory>
 	</properties>
 
@@ -38,6 +38,11 @@
 			<groupId>uk.co.caprica</groupId>
 			<artifactId>vlcj</artifactId>
 			<version>3.10.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.10</version>
 		</dependency>
 	</dependencies>
 

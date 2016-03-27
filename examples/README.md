@@ -80,7 +80,7 @@ This document contains links to all the Java Examples, grouped by category.
 
 #### Java SE &ndash; vlcj
 
-* **[Minimal Player With Play](java-se/vlcj/minimal-player-with-play)**: Shows how to create a minimal [vlcj](https://github.com/caprica/vlcj) player with only a play button.
+* **[Simple Player With Play](java-se/vlcj/simple-player-with-play)**: Shows how to create a simple video player with only a play button.
 
 #### Java SE &ndash; XML &ndash; JAXB
 

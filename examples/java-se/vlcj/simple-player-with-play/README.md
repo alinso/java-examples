@@ -1,6 +1,6 @@
-# Minimal Player With Play
+# Simple Player With Play
 
-This example shows how to create a minimal video player with only a play button
+This example shows how to create a simple video player with only a play button
 using the [vlcj](https://github.com/caprica/vlcj) framework.
 
 The code makes direct use of the `Canvas` AWT component and also `MediaPlayerFactory`

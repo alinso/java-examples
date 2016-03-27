@@ -28,34 +28,31 @@ import uk.co.caprica.vlcj.player.MediaPlayerEventAdapter;
 import uk.co.caprica.vlcj.player.MediaPlayerFactory;
 import uk.co.caprica.vlcj.player.embedded.EmbeddedMediaPlayer;
 
-public class MinimalPlayerWithPlayFrame extends JFrame {
+public class SimplePlayerWithPlayFrame extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	private ActionListenerImpl actionListenerImpl;
 
-	private JPanel mainPanel;
-	private JPanel controlPanel;
 	private Canvas videoSurface;
+	private JPanel controlPanel;
 	private JButton playButton;
 
 	private MediaPlayerFactory mediaPlayerFactory;
 	private EmbeddedMediaPlayer mediaPlayer;
 
-	public MinimalPlayerWithPlayFrame() {
-		super("Minimal Player With Play - Java Example by andbin");
+	public SimplePlayerWithPlayFrame() {
+		super("Simple Player With Play - Java Example by andbin");
 
 		// Setups components and listeners.
 		actionListenerImpl = new ActionListenerImpl();
 
-		mainPanel = new JPanel(new BorderLayout(10, 10));
-		mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-
-		controlPanel = new JPanel();
-		controlPanel.setLayout(new BoxLayout(controlPanel, BoxLayout.LINE_AXIS));
-
 		videoSurface = new Canvas();
 		videoSurface.setBackground(Color.BLACK);
 		videoSurface.setPreferredSize(new Dimension(400, 300));  // Initial dummy dimension.
+
+		controlPanel = new JPanel();
+		controlPanel.setLayout(new BoxLayout(controlPanel, BoxLayout.LINE_AXIS));
+		controlPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
 		playButton = new JButton("PLAY");
 		playButton.addActionListener(actionListenerImpl);
@@ -68,7 +65,7 @@ public class MinimalPlayerWithPlayFrame extends JFrame {
 		};
 
 		mediaPlayerFactory = new MediaPlayerFactory(vlcArgs);
-		mediaPlayerFactory.setUserAgent("Minimal Player by andbin");
+		mediaPlayerFactory.setUserAgent("Simple Player by andbin");
 
 		mediaPlayer = mediaPlayerFactory.newEmbeddedMediaPlayer();
 		mediaPlayer.setVideoSurface(mediaPlayerFactory.newVideoSurface(videoSurface));
@@ -77,14 +74,11 @@ public class MinimalPlayerWithPlayFrame extends JFrame {
 		// Layouts the components.
 		controlPanel.add(playButton);
 
-		mainPanel.add(videoSurface, BorderLayout.CENTER);
-		mainPanel.add(controlPanel, BorderLayout.SOUTH);
-
-		setContentPane(mainPanel);   // Sets mainPanel as the new content pane.
+		add(videoSurface, BorderLayout.CENTER);
+		add(controlPanel, BorderLayout.SOUTH);
 
 		// Setups the frame.
 		addWindowListener(new WindowListenerImpl());
-
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		pack();
 		setLocationRelativeTo(null);   // Centers the frame on the screen.
@@ -92,8 +86,8 @@ public class MinimalPlayerWithPlayFrame extends JFrame {
 
 	private void playVideo() {
 		// Plays a sample video.
-		mediaPlayer.prepareMedia("http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4");
-		mediaPlayer.play();
+		// Note that playMedia is asynchronous, it returns almost instantly.
+		mediaPlayer.playMedia("http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4");
 	}
 
 	private void packVideo(Dimension videoDimension) {
@@ -116,14 +110,15 @@ public class MinimalPlayerWithPlayFrame extends JFrame {
 	}
 
 	// Implementation of MediaPlayerEventListener for video events.
+	// NOTE: media player events are dispatched in the context of a thread
+	// that is NOT the AWT/Swing Event Dispatch Thread.
 	private class MediaPlayerEventListenerImpl extends MediaPlayerEventAdapter {
 		@Override
 		public void videoOutput(MediaPlayer mediaPlayer, int newCount) {
 			final Dimension videoDimension = mediaPlayer.getVideoDimension();
 
 			if (videoDimension != null) {
-				// Uses invokeLater because media player events are dispatched in
-				// the context of a thread that is NOT the Event Dispatch Thread.
+				// Uses invokeLater to execute packVideo in the context of the EDT.
 				SwingUtilities.invokeLater(new Runnable() {
 					public void run() {
 						packVideo(videoDimension);
