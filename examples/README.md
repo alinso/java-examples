@@ -81,6 +81,7 @@ This document contains links to all the Java Examples, grouped by category.
 #### Java SE &ndash; vlcj
 
 * **[Simple Player With Play](java-se/vlcj/simple-player-with-play)**: Shows how to create a simple video player with only a play button.
+* **[Very Simple Player With Play](java-se/vlcj/very-simple-player-with-play)**: Shows how to create a *very* simple video player with only a play button.
 
 #### Java SE &ndash; XML &ndash; JAXB
 
