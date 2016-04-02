@@ -38,7 +38,32 @@
 			<groupId>uk.co.caprica</groupId>
 			<artifactId>vlcj</artifactId>
 			<version>3.10.1</version>
+
+			<!--
+				Excludes JNA transitive dependency in favor of v.4.2.2 configured
+				below. This is due to problems in finding the VLC 'plugins'
+				directory on Windows. See some of the vlcj issues at:
+				https://github.com/caprica/vlcj/issues
+			-->
+			<exclusions>
+				<exclusion>
+					<groupId>net.java.dev.jna</groupId>
+					<artifactId>jna</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.java.dev.jna</groupId>
+					<artifactId>jna-platform</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
+
+		<!-- Adds explicit JNA dependency to upgrade to v.4.2.2 -->
+		<dependency>
+			<groupId>net.java.dev.jna</groupId>
+			<artifactId>jna-platform</artifactId>
+			<version>4.2.2</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>

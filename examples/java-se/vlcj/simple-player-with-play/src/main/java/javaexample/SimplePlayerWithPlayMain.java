@@ -8,7 +8,9 @@
 
 package javaexample;
 
+import com.sun.jna.NativeLibrary;
 import javax.swing.SwingUtilities;
+import uk.co.caprica.vlcj.runtime.RuntimeUtil;
 
 /*
  * This is the "main" class of this Java Example.
@@ -21,9 +23,18 @@ import javax.swing.SwingUtilities;
  */
 public class SimplePlayerWithPlayMain {
 	public static void main(String[] args) {
+		if (args.length == 1) {
+			NativeLibrary.addSearchPath(RuntimeUtil.getLibVlcLibraryName(), args[0]);
+		}
+
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-				new SimplePlayerWithPlayFrame().setVisible(true);
+				try {
+					new SimplePlayerWithPlayFrame().setVisible(true);
+				} catch (RuntimeException e) {
+					System.err.println(e);
+					GUIUtils.showTextAreaErrorDialog(null, e, "ERROR");
+				}
 			}
 		});
 	}

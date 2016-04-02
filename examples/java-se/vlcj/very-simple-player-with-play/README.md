@@ -3,7 +3,8 @@
 This example shows how to create a *very* simple video player with only a play
 button using the [vlcj](https://github.com/caprica/vlcj) framework.
 
-The code mainly uses the `EmbeddedMediaPlayerComponent` class from vlcj.
+The main point of this example is the use of the `EmbeddedMediaPlayerComponent`
+class from vlcj.
 Note that this example does **not** directly use the `java.awt.Canvas` nor the
 `MediaPlayerFactory`/`EmbeddedMediaPlayer` classes from vlcj. If you want to
 see an example about these classes, please see the other example
@@ -12,6 +13,7 @@ see an example about these classes, please see the other example
 ### Requirements
 
 * Java 6 or higher (due to vlcj requirements)
+* VideoLAN VLC 2.1.0 or higher (see detailed requirements on vlcj github page)
 
 ### Screenshots
 
@@ -27,6 +29,9 @@ If you want to play the video as referenced in this example, you need an interne
 connection of at least 1~1.5 Mbit/sec.
 
 ### Credits
+
+vlcj is distributed according to the terms of the [GPL](http://www.gnu.org/licenses/gpl.html)
+license.
 
 The video linked and played in this example is available at [peach.blender.org/download/](https://peach.blender.org/download/).<br>
 &copy; copyright 2008, Blender Foundation / www.bigbuckbunny.org
