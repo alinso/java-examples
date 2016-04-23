@@ -64,6 +64,10 @@ This document contains links to all the Java Examples, grouped by category.
 * **[RGB Color Slider](java-se/swing/slider/rgb-color-slider)**: Shows how to create a simple color "chooser" with three slider components.
 * **[Slider Label Icons](java-se/swing/slider/slider-label-icons)**: Shows how to setup a *label table* for a `JSlider` in order to have ticks with icons instead of numbers.
 
+#### Java SE &ndash; Swing &ndash; Split panes
+
+* **[Split Pane Demo](java-se/swing/splitpane/splitpane-demo)**: Shows how to use the `javax.swing.JSplitPane` component both in the vertical and horizontal orientations.
+
 #### Java SE &ndash; Swing &ndash; Table components
 
 * **[Checkboxes Table](java-se/swing/table/checkboxes-table)**: Shows how to create a nice and useful table of items selectable using checkboxes.
