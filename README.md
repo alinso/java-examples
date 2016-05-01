@@ -7,10 +7,10 @@
 
 The **Java Examples** project is exclusively developed by [Andrea Binello](http://www.andbin.net)
 (&ldquo;andbin&rdquo;) to provide a set of valid, useful and enjoyable examples
-about the *Java programming language*, the *Java SE* (Standard Edition) framework
-and other libraries.
+about the Java programming language, the Java SE (*Standard Edition*) framework
+and other libraries/frameworks.
 
-### :point_right: **[Table of contents](examples/README.md)**
+See the **[Table of contents](examples/README.md)**<br><br>
 
 ## Features
 
@@ -18,11 +18,12 @@ The following are the overall features of the examples:
 
 * generally **short** (in average 2 to 6 Java source files)
 * very **well written** (following standard code and naming conventions)
-* **commented** (in english only language)
+* code **commented** in english language
 * **self contained** (no dependencies on other examples, no particular editor/IDE requirements)
-* provided with screenshots for GUI examples
+* provided with screenshots for GUI (*Graphical User Interface*) examples
 * provided with a `build.xml` file for building with [Apache Ant](http://ant.apache.org)
-  (more complex examples may have a `pom.xml` for building with [Apache Maven](http://maven.apache.org))
+  or with a `pom.xml` for building with [Apache Maven](http://maven.apache.org)
+  (for more complex examples)
 
 ## License
 
