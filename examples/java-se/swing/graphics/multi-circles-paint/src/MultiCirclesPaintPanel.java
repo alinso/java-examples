@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Andrea Binello ("andbin")
+ * Copyright (C) 2016-2017 Andrea Binello ("andbin")
  *
  * This file is part of the "Java Examples" project and is licensed under the
  * MIT License. See one of the license files included in the root of the project
@@ -25,13 +25,12 @@ public class MultiCirclesPaintPanel extends JPanel {
 	public void addCircleElement(CircleElement circleElement) {
 		circleElements.add(circleElement);
 
-		// Asks a repaint for only the rectangle of the circle. This is just
-		// a simple and quick optimization.
-		repaint(circleElement.getLeftX(), circleElement.getTopY(),
-				circleElement.getDiameter(), circleElement.getDiameter());
+		// Asks a repaint for only the "bounding box" (rectangle) of the circle.
+		// This is just a simple and quick optimization.
+		repaint(circleElement.getBoundingBox());
 	}
 
-	public void removeAllCircleElement() {
+	public void removeAllCircleElements() {
 		circleElements.clear();
 		repaint();   // Asks a repaint for the entire panel.
 	}

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Andrea Binello ("andbin")
+ * Copyright (C) 2016-2017 Andrea Binello ("andbin")
  *
  * This file is part of the "Java Examples" project and is licensed under the
  * MIT License. See one of the license files included in the root of the project
@@ -7,6 +7,7 @@
  */
 
 import java.awt.Color;
+import java.awt.Rectangle;
 
 /*
  * This is a simple "bean" class that contains informations about one single
@@ -59,6 +60,14 @@ public class CircleElement {
 
 
 	// Custom methods to get other useful informations
+
+	public Rectangle getBoundingBox() {
+		int leftX = getLeftX();
+		int topY = getTopY();
+		int diameter = getDiameter();
+
+		return new Rectangle(leftX, topY, diameter, diameter);
+	}
 
 	public int getLeftX() {
 		return getCenterX() - getRadius();
